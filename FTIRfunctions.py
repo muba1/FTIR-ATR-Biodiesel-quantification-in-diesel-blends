@@ -1,11 +1,10 @@
 """Functions used for FTIR spectra procesing."""
-import codecs
 import pandas as pd
 
 
 def open_ascii(path):
     """Opening ASCII to a DataFrame: columns Wave_number and Absorbance."""
-    with codecs.open(path, encoding='utf-8-sig') as f:
+    with open(path) as f:
         lines = f.readlines()[56:-2]
         new_lines = []
         for line in lines:
