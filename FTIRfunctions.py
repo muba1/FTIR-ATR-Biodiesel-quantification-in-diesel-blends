@@ -1,4 +1,5 @@
 """Functions used for FTIR spectra procesing."""
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
@@ -37,7 +38,7 @@ def procesing_biodiesel_FTIR(alcohols, concentrations, dir_path):
             three_bd_abs = []
             three_bd_abs_wn = []
             for i in range(3):
-                file = alcohol + ' ' + concentration + ' ' + str(i) + '.asc'
+                file = alcohol + '-' + concentration + '-' + str(i) + '.asc'
                 path = dir_path + file
                 df = openFTIR(path)
 
@@ -66,8 +67,23 @@ def procesing_biodiesel_FTIR(alcohols, concentrations, dir_path):
                    np.mean(three_bd_abs),
                    np.std(three_bd_abs)]
             results.append(res)
-    return pd.DataFrame(results, columns=['Alcohol', 'Concentrations',
+        df2 = pd.DataFrame(results, columns=['Alcohol', 'Concentrations',
                                           'Wave number', 'Absorption 1',
                                           'Absorption 2', 'Absorption 3',
                                           'Absorption average',
                                           'Standard deviation'])
+        plt.scatter(df2['Concentrations'].values,
+                        df2['Absorption average'].values,
+                        s=15, c='r', alpha=0.9)
+        '''plt.plot(df2['Concentrations'].values,
+                     (df2['Absorption average'].values),
+                     "--")'''
+        plt.xlabel('Concentration, vol. %')
+        plt.ylabel('Absorbance')
+        plt.ylim(ymin=0)
+        plt.xlim(xmin=0)
+        plt.title(alcohol)
+        plt.grid(False)
+            #plt.savefig(folder_path +'Results/'+ alcohol + '-results.png')
+        plt.show()
+    return df2
