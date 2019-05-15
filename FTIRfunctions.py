@@ -27,7 +27,7 @@ def baseline(df):
     return a, b, x1, x2
 
 
-def procesing_biodiesel_FTIR(alcohols, concentrations, dir_path):
+def max_amplitude_FTIR(alcohols, concentrations, dir_path):
     """Process FTIR data and returns the maximum of absorbance for
     the coresponding concentration of diosiesel in the wavenumber
     range of 1690-1780.
@@ -86,4 +86,47 @@ def procesing_biodiesel_FTIR(alcohols, concentrations, dir_path):
         plt.grid(False)
             #plt.savefig(folder_path +'Results/'+ alcohol + '-results.png')
         plt.show()
+    return df2
+
+
+def absorbance_inrange_FTIR(alcohol, concentrations, dir_path):
+    results = []
+    col = []
+    for concentration in concentrations:
+        abs_conc = []
+        for i in range(3):
+            file = alcohol + '-' + concentration + '-' + str(i) + '.asc'
+            path = dir_path + file
+            df = openFTIR(path)
+            # BASELINE - slope (a), intercept(b)
+            a, b, x1, x2 = baseline(df)
+            ''' ispravljanje bazne linije'''
+            abs_cor_list = []
+            wn_list = []
+            for wavenumber in df['Wave_number'].values:
+                if wavenumber > x1 * 0.99 and wavenumber < x2 * 1.01:
+                    abs_cor = float(
+                        df.loc[df[
+                                'Wave_number'
+                                ].values == wavenumber][
+                                    'Absorbance'
+                                    ].values) - (a * wavenumber + b)
+                    abs_cor_list.append(abs_cor)
+                    wn_list.append(wavenumber)
+            abs_conc.append(abs_cor_list)
+        mean_abs = []
+
+        for a in range(len(abs_conc[0])):
+            mean_abs.append(
+                np.mean([abs_conc[i][a] for i in range(len(abs_conc))]))
+        if results == []:
+            results.append(wn_list)
+            results.append(mean_abs)
+            col.append('Wavenumber')
+        else:
+            results.append(mean_abs)
+            col.append(str(float(concentration)/100) + '% ')
+    df2 = pd.DataFrame()
+    for i in range(len(col)):
+        df2[col[i]] = results[i]
     return df2
