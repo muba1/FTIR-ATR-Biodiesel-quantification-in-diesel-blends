@@ -141,12 +141,13 @@ def absorbance_inrange_FTIR(alcohol, concentrations, dir_path):
     return df2
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     dir_path = 'Test_data/'
     alcohols = ['NB4']
     concentrations = ['0025', '0050', '0100', '0250', '0500', '0750',
                   '1000', '1250', '1500', '1750', '2000', '2500',
                   '3000']
     for alcohol in alcohols:
-        df2 = ff.absorbance_inrange_FTIR(alcohol, concentrations, dir_path)
-        print(df2.head())
+        df2 = absorbance_inrange_FTIR(alcohol, concentrations, dir_path)
+    for alcohol in alcohols:
+        df3 = max_amplitude_FTIR(alcohol, concentrations, dir_path)
