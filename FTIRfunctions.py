@@ -27,65 +27,65 @@ def baseline(df):
     return a, b, x1, x2
 
 
-def max_amplitude_FTIR(alcohols, concentrations, dir_path):
+def max_amplitude_FTIR(alcohol, concentrations, dir_path):
     """Process FTIR data and returns the maximum of absorbance for
     the coresponding concentration of diosiesel in the wavenumber
     range of 1690-1780.
     """
-    for alcohol in alcohols:
-        results = []
-        for concentration in concentrations:
-            three_bd_abs = []
-            three_bd_abs_wn = []
-            for i in range(3):
-                file = alcohol + '-' + concentration + '-' + str(i) + '.asc'
-                path = dir_path + file
-                df = openFTIR(path)
+    results = []
+    for concentration in concentrations:
+        three_bd_abs = []
+        three_bd_abs_wn = []
+        for i in range(3):
+            file = alcohol + '-' + concentration + '-' + str(i) + '.asc'
+            path = dir_path + file
+            df = openFTIR(path)
 
-                # BASELINE - slope (a), intercept(b)
-                a, b, x1, x2 = baseline(df)
-                bd_abs = df.loc[(df['Wave_number'] > x1) &
-                                (df['Wave_number'] < x2)
-                                ]['Absorbance'].max()
-                bd_abs_wn = float(df.loc[(df['Absorbance'] == bd_abs) &
-                                         ((df['Wave_number'] < x2) &
-                                          ((df['Wave_number'] > x1)))
-                                         ]['Wave_number'].mean())
+            # BASELINE - slope (a), intercept(b)
+            a, b, x1, x2 = baseline(df)
+            bd_abs = df.loc[(df['Wave_number'] > x1) &
+                            (df['Wave_number'] < x2)
+                            ]['Absorbance'].max()
+            bd_abs_wn = float(df.loc[(df['Absorbance'] == bd_abs) &
+                                     ((df['Wave_number'] < x2) &
+                                      ((df['Wave_number'] > x1)))
+                                     ]['Wave_number'].mean())
 
-                # Corrected absorbance
-                bd_abs = bd_abs - (a * bd_abs_wn + b)
+            # Corrected absorbance
+            bd_abs = bd_abs - (a * bd_abs_wn + b)
 
-                conc = float(concentration) / 100
-                three_bd_abs.append(bd_abs)
-                three_bd_abs_wn.append(bd_abs_wn)
+            conc = float(concentration) / 100
+            three_bd_abs.append(bd_abs)
+            three_bd_abs_wn.append(bd_abs_wn)
 
-            res = [alcohol, conc,
-                   np.mean(three_bd_abs_wn),
-                   three_bd_abs[0],
-                   three_bd_abs[1],
-                   three_bd_abs[2],
-                   np.mean(three_bd_abs),
-                   np.std(three_bd_abs)]
-            results.append(res)
-        df2 = pd.DataFrame(results, columns=['Alcohol', 'Concentrations',
-                                          'Wave number', 'Absorption 1',
-                                          'Absorption 2', 'Absorption 3',
-                                          'Absorption average',
-                                          'Standard deviation'])
-        plt.scatter(df2['Concentrations'].values,
-                        df2['Absorption average'].values,
-                        s=15, c='r', alpha=0.9)
-        '''plt.plot(df2['Concentrations'].values,
-                     (df2['Absorption average'].values),
-                     "--")'''
-        plt.xlabel('Concentration, vol. %')
-        plt.ylabel('Absorbance')
-        plt.ylim(ymin=0)
-        plt.xlim(xmin=0)
-        plt.title(alcohol)
-        plt.grid(False)
-            #plt.savefig(folder_path +'Results/'+ alcohol + '-results.png')
-        plt.show()
+        res = [alcohol, conc,
+               np.mean(three_bd_abs_wn),
+               three_bd_abs[0],
+               three_bd_abs[1],
+               three_bd_abs[2],
+               np.mean(three_bd_abs),
+               np.std(three_bd_abs)]
+        results.append(res)
+    df2 = pd.DataFrame(
+        results, columns=[
+            'Alcohol', 'Concentrations','Wave number', 'Absorption 1',
+            'Absorption 2', 'Absorption 3','Absorption average',
+            'Standard deviation'])
+    plt.scatter(
+        df2['Concentrations'].values,
+        df2['Absorption average'].values,
+        s=15, c='r', alpha=0.9)
+    '''plt.plot(df2['Concentrations'].values,
+                 (df2['Absorption average'].values),
+                 "--")'''
+    plt.xlabel('Concentration, vol. %')
+    plt.ylabel('Absorbance')
+    plt.ylim(ymin=0)
+    plt.xlim(xmin=0)
+    plt.title(alcohol)
+    plt.grid(False)
+    # plt.savefig(folder_path +'Results/'+ alcohol + '-results.png')
+    plt.show()
     return df2
 
 
@@ -129,4 +129,24 @@ def absorbance_inrange_FTIR(alcohol, concentrations, dir_path):
     df2 = pd.DataFrame()
     for i in range(len(col)):
         df2[col[i]] = results[i]
+    for i in range(1, len(col)):
+        plt.plot(df2['Wavenumber'], df2[col[i]], 'k')
+
+    plt.xlabel('Wave number, cm-1')
+    plt.ylabel('Absorbance')
+    plt.title(alcohol)
+    plt.grid(True)
+    # plt.savefig(folder_path + 'spektri_mean_slike/' + alcohol + '-svi_spektri.png')
+    plt.show()
     return df2
+
+
+if __name__ == 'main':
+    dir_path = 'Test_data/'
+    alcohols = ['NB4']
+    concentrations = ['0025', '0050', '0100', '0250', '0500', '0750',
+                  '1000', '1250', '1500', '1750', '2000', '2500',
+                  '3000']
+    for alcohol in alcohols:
+        df2 = ff.absorbance_inrange_FTIR(alcohol, concentrations, dir_path)
+        print(df2.head())
