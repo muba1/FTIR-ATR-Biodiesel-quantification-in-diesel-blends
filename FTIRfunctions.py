@@ -70,7 +70,7 @@ def max_amplitude_FTIR(alcohol, concentrations, dir_path, plot = True,x1 = 1690,
             'Alcohol', 'Concentrations','Wave number', 'Absorption 1',
             'Absorption 2', 'Absorption 3','Absorption average',
             'Standard deviation'])
-    if plot == True:
+    if plot:
         plt.scatter(
         df2['Concentrations'].values,
         df2['Absorption average'].values,
@@ -89,7 +89,7 @@ def max_amplitude_FTIR(alcohol, concentrations, dir_path, plot = True,x1 = 1690,
     return df2
 
 
-def absorbance_in_range_FTIR(alcohol, concentrations, dir_path, plot=True,x1 = 1690, x2 = 1780):
+def absorbance_in_range_FTIR(alcohol, concentrations, dir_path, plot=True, x1=1690, x2=1780):
     results = []
     col = []
     for concentration in concentrations:
@@ -149,12 +149,12 @@ def integrate_FTIR(alcohol, concentrations, dir_path, plot=True, x1=1690, x2=178
     range of 1690-1780.
     """
 
-    df2 = absorbance_in_range_FTIR(alcohol, concentrations, dir_path, plot=False,x1 = 1690, x2 = 1780)
+    df2 = absorbance_in_range_FTIR(alcohol, concentrations, dir_path, plot=False, x1=1690, x2=1780)
     columns = list(df2.columns.values)
-    conc = [float(i[:-1])/100 for i in columns[1:]]
-    if plot == True:
-        for i, column in enumerate(columns[1:]):
-            plt.plot(conc[i-1], df2[column].sum, 'k')
+    x_data = [float(str(i[:-1])) for i in columns[1:]]
+    y_data = [df2[i].sum() for i in columns[1:]]
+    if plot:
+        plt.plot(x_data, y_data, 'k')
         plt.xlabel('Content, %')
         plt.ylabel('Absorbance area')
         plt.title(alcohol)
@@ -170,7 +170,9 @@ if __name__ == '__main__':
     concentrations = ['0025', '0050', '0100', '0250', '0500', '0750',
                   '1000', '1250', '1500', '1750', '2000', '2500',
                   '3000']
-    '''for alcohol in alcohols:
-        df2 = absorbance_in_range_FTIR(alcohol, concentrations, dir_path)'''
+    for alcohol in alcohols:
+        df2 = absorbance_in_range_FTIR(alcohol, concentrations, dir_path)
     for alcohol in alcohols:
         df3 = integrate_FTIR(alcohol, concentrations, dir_path)
+    for alcohol in alcohols:
+        df3 = max_amplitude_FTIR(alcohol, concentrations, dir_path)

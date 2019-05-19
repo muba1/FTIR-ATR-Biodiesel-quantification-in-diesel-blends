@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a4e26cb-c037-4020-9df7-5bce2f94fb1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FTIR-ATR-Biodiesel-quantification-in-diesel-blends.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FTIR-ATR-Biodiesel-quantification-in-diesel-blends.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTIRfunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/FTIRfunctions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,13 +16,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FTIRfunctions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="154" column="20" lean-forward="true" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
+            <state relative-caret-position="17">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="70" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>float</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,6 +67,10 @@
             <path>
               <item name="FTIR-ATR-Biodiesel-quantification-in-diesel-blends" type="b2602c69:ProjectViewProjectNode" />
               <item name="FTIR-ATR-Biodiesel-quantification-in-diesel-blends" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FTIR-ATR-Biodiesel-quantification-in-diesel-blends" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -131,11 +137,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="696" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19157393" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19157393" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24960254" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -156,8 +162,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/FTIRfunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="154" column="20" lean-forward="true" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
+        <state relative-caret-position="17">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="70" selection-end-column="7" />
         </state>
       </provider>
     </entry>
