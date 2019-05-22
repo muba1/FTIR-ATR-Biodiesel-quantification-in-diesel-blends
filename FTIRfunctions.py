@@ -84,7 +84,6 @@ def max_amplitude_FTIR(alcohol, concentrations, dir_path):
     plt.xlim(xmin=0)
     plt.title(alcohol)
     plt.grid(False)
-    # plt.savefig(folder_path +'Results/'+ alcohol + '-results.png')
     plt.show()
     return df2
 
@@ -136,7 +135,6 @@ def absorbance_inrange_FTIR(alcohol, concentrations, dir_path):
     plt.ylabel('Absorbance')
     plt.title(alcohol)
     plt.grid(True)
-    # plt.savefig(folder_path + 'spektri_mean_slike/' + alcohol + '-svi_spektri.png')
     plt.show()
     return df2
 
