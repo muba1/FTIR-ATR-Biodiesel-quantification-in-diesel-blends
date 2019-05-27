@@ -6,9 +6,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <change beforePath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" afterDir="false" />
 >>>>>>> 6df9dd62cc291643569dfa1c9ac2fbbce0ed0bb2
+=======
+>>>>>>> parent of 6df9dd6... r squered added to calibration plot title
 =======
 >>>>>>> parent of 6df9dd6... r squered added to calibration plot title
       <change beforePath="$PROJECT_DIR$/FTIRfunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/FTIRfunctions.py" afterDir="false" />
@@ -30,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="395">
               <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
 =======
@@ -43,6 +47,10 @@
             <state relative-caret-position="2550">
               <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
 >>>>>>> parent of 9aa331c...  update
+=======
+            <state relative-caret-position="17">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="70" selection-end-column="7" />
+>>>>>>> parent of 6df9dd6... r squered added to calibration plot title
 =======
             <state relative-caret-position="17">
               <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="70" selection-end-column="7" />
@@ -81,6 +89,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
 =======
   <component name="ProjectFrameBounds" extendedState="6">
@@ -88,6 +97,9 @@
 =======
   <component name="ProjectFrameBounds" extendedState="7">
 >>>>>>> parent of 9aa331c...  update
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+>>>>>>> parent of 6df9dd6... r squered added to calibration plot title
 =======
   <component name="ProjectFrameBounds" extendedState="7">
 >>>>>>> parent of 6df9dd6... r squered added to calibration plot title
@@ -221,6 +233,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="395">
           <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
 =======
@@ -234,6 +247,10 @@
         <state relative-caret-position="2550">
           <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
 >>>>>>> parent of 9aa331c...  update
+=======
+        <state relative-caret-position="17">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="70" selection-end-column="7" />
+>>>>>>> parent of 6df9dd6... r squered added to calibration plot title
 =======
         <state relative-caret-position="17">
           <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="70" selection-end-column="7" />
