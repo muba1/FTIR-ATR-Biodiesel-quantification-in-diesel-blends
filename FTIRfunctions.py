@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import scipy.stats
+
 
 def openFTIR(path):
     """Opening ASCII to a DataFrame: columns Wave_number and Absorbance."""
@@ -95,11 +95,9 @@ def max_amplitude_FTIR(alcohol, concentrations, dir_path, plot = True,x1 = 1690,
         plt.ylabel('Absorbance')
         plt.ylim(ymin=0)
         plt.xlim(xmin=0)
-        slope, intercept, r_value, p_value, std_err = scipy.stats.linregress(
-            df2['Concentrations'].values,
-            df2['Absorption average'].values)
-        plt.title(alcohol + ' R2 = ' + str(r_value))
+        plt.title(alcohol)
         plt.grid(False)
+        # plt.savefig(folder_path +'Results/'+ alcohol + '-results.png')
         plt.show()
 >>>>>>> 6df9dd62cc291643569dfa1c9ac2fbbce0ed0bb2
     return df2
@@ -166,6 +164,7 @@ def absorbance_in_range_FTIR(alcohol, concentrations, dir_path, plot=True, x1=16
         plt.ylabel('Absorbance')
         plt.title(alcohol)
         plt.grid(True)
+        # plt.savefig(folder_path + 'spektri_mean_slike/' + alcohol + '-svi_spektri.png')
         plt.show()
     return df2
 
@@ -181,12 +180,12 @@ def integrate_FTIR(alcohol, concentrations, dir_path, plot=True, x1=1690, x2=178
     x_data = [float(str(i[:-1])) for i in columns[1:]]
     y_data = [df2[i].sum() for i in columns[1:]]
     if plot:
-        plt.scatter(x_data, y_data, s=15, c='r', alpha=0.9)
-        slope, intercept, r_value, p_value, std_err = scipy.stats.linregress(x_data, y_data)
+        plt.plot(x_data, y_data, 'k')
         plt.xlabel('Content, %')
         plt.ylabel('Absorbance area')
-        plt.title(alcohol +  ' R2 = ' + str(r_value))
+        plt.title(alcohol)
         plt.grid(True)
+        # plt.savefig(folder_path + 'spektri_mean_slike/' + alcohol + '-svi_spektri.png')
         plt.show()
 >>>>>>> 6df9dd62cc291643569dfa1c9ac2fbbce0ed0bb2
     return df2

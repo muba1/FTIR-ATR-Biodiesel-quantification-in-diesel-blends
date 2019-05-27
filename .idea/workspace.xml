@@ -5,9 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <change beforePath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" afterDir="false" />
 >>>>>>> 6df9dd62cc291643569dfa1c9ac2fbbce0ed0bb2
+=======
+>>>>>>> parent of 6df9dd6... r squered added to calibration plot title
       <change beforePath="$PROJECT_DIR$/FTIRfunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/FTIRfunctions.py" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" afterDir="false" />
@@ -26,6 +29,7 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="395">
               <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
 =======
@@ -39,6 +43,10 @@
             <state relative-caret-position="2550">
               <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
 >>>>>>> parent of 9aa331c...  update
+=======
+            <state relative-caret-position="17">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="70" selection-end-column="7" />
+>>>>>>> parent of 6df9dd6... r squered added to calibration plot title
             </state>
           </provider>
         </entry>
@@ -72,6 +80,7 @@
   </component>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
 =======
   <component name="ProjectFrameBounds" extendedState="6">
@@ -79,6 +88,9 @@
 =======
   <component name="ProjectFrameBounds" extendedState="7">
 >>>>>>> parent of 9aa331c...  update
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+>>>>>>> parent of 6df9dd6... r squered added to calibration plot title
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1292" />
@@ -179,6 +191,7 @@
 <<<<<<< HEAD
 =======
     <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.19157393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24960254" />
@@ -192,7 +205,7 @@
 >>>>>>> parent of 9aa331c...  update
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24468085" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24468085" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -202,20 +215,10 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/FTIRfunctions.py</url>
-          <line>146</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/FTIRfunctions.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="395">
@@ -231,6 +234,10 @@
         <state relative-caret-position="2550">
           <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
 >>>>>>> parent of 9aa331c...  update
+=======
+        <state relative-caret-position="17">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="70" selection-end-column="7" />
+>>>>>>> parent of 6df9dd6... r squered added to calibration plot title
         </state>
       </provider>
     </entry>
