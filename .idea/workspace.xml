@@ -4,10 +4,14 @@
     <list default="true" id="5a4e26cb-c037-4020-9df7-5bce2f94fb1f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <change beforePath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" afterDir="false" />
 >>>>>>> 6df9dd62cc291643569dfa1c9ac2fbbce0ed0bb2
       <change beforePath="$PROJECT_DIR$/FTIRfunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/FTIRfunctions.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FTIR-ATR-data-processing.ipynb" afterDir="false" />
+>>>>>>> parent of 9aa331c...  update
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +20,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FTIRfunctions.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="395">
               <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
@@ -30,6 +35,10 @@
               <folding>
                 <element signature="e#49#80#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="2550">
+              <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+>>>>>>> parent of 9aa331c...  update
             </state>
           </provider>
         </entry>
@@ -62,10 +71,14 @@
     </option>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
 =======
   <component name="ProjectFrameBounds" extendedState="6">
 >>>>>>> 6df9dd62cc291643569dfa1c9ac2fbbce0ed0bb2
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+>>>>>>> parent of 9aa331c...  update
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1292" />
@@ -154,10 +167,16 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="260" y="20" width="1400" height="1000" extended-state="0" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+>>>>>>> parent of 9aa331c...  update
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17841409" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+<<<<<<< HEAD
 =======
     <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
     <layout>
@@ -165,6 +184,12 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.24960254" />
 >>>>>>> 6df9dd62cc291643569dfa1c9ac2fbbce0ed0bb2
       <window_info id="Favorites" order="2" side_tool="true" />
+=======
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+>>>>>>> parent of 9aa331c...  update
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24468085" />
@@ -172,10 +197,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -196,6 +217,7 @@
     <entry file="file://$PROJECT_DIR$/FTIRfunctions.py">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="395">
           <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
 =======
@@ -205,6 +227,10 @@
           <folding>
             <element signature="e#49#80#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="2550">
+          <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+>>>>>>> parent of 9aa331c...  update
         </state>
       </provider>
     </entry>
